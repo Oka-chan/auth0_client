@@ -26,4 +26,4 @@ python server.py
 ```
 
 # デモ
-demo.zipファイルにデモ動画を配置しています。
+`demo.zip`ファイルにデモ動画を配置しています。
