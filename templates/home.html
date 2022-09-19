@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Auth0 Example</title>
+</head>
+<body>
+  {% if session %}
+      <h1>Welcome {{session.name}}!</h1>
+      <p><a href="/logout">Logout</a></p>
+      <div><pre>{{pretty}}</pre></div>
+
+      <h1>Refresh Token publish</h1>
+      <button onclick="location.href='/refresh'">Refresh</button>
+
+      <h1>UserInfo</h1>
+      <button onclick="location.href='/userinfo'">UserInfo</button>
+  {% else %}
+    <h1>Welcome Guest</h1>
+    <p><a href="/login">Login</a></p>
+  {% endif %}
+</body>
+</html>
